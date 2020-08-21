@@ -16,11 +16,43 @@
     </v-row>
     <v-row class="pt-10">
       <div class="mr-5">
-        <p class="display-2 mb-0 pl-3" :class=" { 'display-1' : $vuetify.breakpoint.smAndDown } ">About Me</p>
+        <p id="fifth" class="display-2 mb-0 pl-3" :class=" { 'display-1' : $vuetify.breakpoint.smAndDown } ">About Me</p>
       </div>
       <div class="d-flex align-center">
         <div class="line" v-bind:style="{ width: maxWidth }"></div>
       </div>
+    </v-row>
+    <v-row>
+      <v-col cols="12" md="6">
+        <div class="myFont">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+      </v-col>
+      <v-col cols="12" md="6">
+         <v-container fill-height fluid>
+          <!-- src="~/assets/images/joshhavv.jpg" -->
+            <v-row align="center" justify="center">
+                <v-img
+                  :src="require('~/assets/images/joshhavv.jpg')"
+                  lazy-src="https://picsum.photos/id/11/100/60"
+                  aspect-ratio="1"
+                  class="grey lighten-2"
+                  max-width="300"
+                  max-height="200"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
+            </v-row>
+          </v-container>
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -47,7 +79,12 @@
 </script>
 
 <style>
+  .myFont {
+    font-family: 'Mansalva', cursive; 
+    letter-spacing: 1px;
+  }
   .line{
+      color: #a6a195;
       border-bottom: 0.5px solid white;
       position: absolute;
     }
@@ -64,5 +101,8 @@
     margin-bottom: 80px;
     letter-spacing: 1px;
     font-family: 'Mansalva', cursive;
+  }
+  #fifth{
+    color: #a6a195;
   }
 </style>

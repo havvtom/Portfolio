@@ -16,24 +16,39 @@
     </v-row>
     <v-row class="pt-10">
       <div class="mr-5">
-        <p class="display-2">About Me</p>
+        <p class="display-2 mb-0 pl-3" :class=" { 'display-1' : $vuetify.breakpoint.smAndDown } ">About Me</p>
       </div>
       <div class="d-flex align-center">
-        <div class="line"></div>
+        <div class="line" v-bind:style="{ width: maxWidth }"></div>
       </div>
     </v-row>
   </div>
 </template>
 <script type="text/javascript">
   export default {
+    computed: {
+      maxWidth () {
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return '150px'
+            break;
+          case 'sm': return '300px'
+            break;
+          case 'md': return '300px'
+            break;
+          case 'lg': return '400px'
+            break;
+          case 'xlg': return '500px'
+            break;
+        }
+      }
+    }
 
   }
 </script>
 
 <style>
   .line{
-      width: 300px;
-      border-bottom: 1px solid white;
+      border-bottom: 0.5px solid white;
       position: absolute;
     }
   #first{

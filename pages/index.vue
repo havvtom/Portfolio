@@ -36,7 +36,7 @@
                   :src="require('~/assets/images/joshhavv.jpg')"
                   lazy-src="https://picsum.photos/id/11/100/60"
                   aspect-ratio="1"
-                  class="grey lighten-2"
+                  class="grey lighten-2 gray"
                   max-width="300"
                   max-height="200"
                 >
@@ -104,5 +104,12 @@
   }
   #fifth{
     color: #a6a195;
+  }
+  .gray{
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+  }
+  .gray:hover{
+    filter: grayscale(0);
   }
 </style>

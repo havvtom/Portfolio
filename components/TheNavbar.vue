@@ -67,7 +67,7 @@
 					{ title: 'Projects', icon: 'mdi-folder', url: '/projects'},
 					{ title: 'About', icon: 'mdi-face', url: '/'},
 					{ title: 'Contact', icon: 'mdi-email', url: '/contact'},
-					{ title: 'Resume', icon: 'mdi-pages', url: '/resume'},
+					{ title: 'Resume', icon: '', url: '/resume'},
 				]
 			}
 		},

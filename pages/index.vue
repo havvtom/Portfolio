@@ -24,8 +24,27 @@
     </v-row>
     <v-row>
       <v-col cols="12" md="6">
-        <div class="myFont">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="myFont mb-5">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+        </div>
+        <p class="myFont">Listed below are the technologies I am familiar with:</p>
+        <div>
+          <v-row>
+            <v-col>
+              <ul class="myFont font-weight-thin">
+                <li>Nuxt.js</li>
+                <li>Vue.js</li>
+                <li>Laravel</li>
+              </ul>
+            </v-col>
+            <v-col>
+              <ul class="myFont">
+                <li>Tailwind</li>
+                <li>Vuetify</li>
+                <li>CSS</li>
+              </ul>
+            </v-col>
+          </v-row>
         </div>
       </v-col>
       <v-col cols="12" md="6">
@@ -82,6 +101,7 @@
   .myFont {
     font-family: 'Mansalva', cursive; 
     letter-spacing: 1px;
+    color: #a6a195;
   }
   .line{
       color: #a6a195;
@@ -101,6 +121,7 @@
     margin-bottom: 80px;
     letter-spacing: 1px;
     font-family: 'Mansalva', cursive;
+    color: #a6a195;
   }
   #fifth{
     color: #a6a195;
@@ -113,5 +134,15 @@
   .gray:hover{
     filter: grayscale(0);
     transform: scale(1.3);
+  }
+  ul {
+    position: relative;
+    list-style: none;
+  }
+
+  li::before {
+    content: '➣';
+    position: absolute;
+    left: 0;
   }
 </style>

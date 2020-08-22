@@ -107,9 +107,11 @@
   }
   .gray{
     filter: grayscale(100%);
+    transform: scale(1);
     transition: .3s ease-in-out;
   }
   .gray:hover{
     filter: grayscale(0);
+    transform: scale(1.3);
   }
 </style>

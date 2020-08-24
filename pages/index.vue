@@ -97,7 +97,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .myFont {
     font-family: 'Mansalva', cursive; 
     letter-spacing: 1px;

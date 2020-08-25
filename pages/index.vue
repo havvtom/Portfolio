@@ -11,7 +11,7 @@
     </p>
     <v-row>
       <v-col id="fourth" md="8" class="mt-16 font-weight-thin">
-        I am a self taught software engineer based in Johannesburg, holding an honours degree in Chemical Engineering. Software engineering started as a hobby and has now become a passion. The challenges it poses got me hooked.         
+        I am a self taught software engineer based in Johannesburg. Software engineering started as a hobby and has now become a passion. The challenges it poses got me hooked.         
       </v-col>
     </v-row>
     <v-row class="pt-10">

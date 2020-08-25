@@ -66,7 +66,7 @@
 				items: [
 					{ title: 'Projects', icon: 'mdi-folder', url: '/projects'},
 					{ title: 'About', icon: 'mdi-face', url: '/'},
-					{ title: 'Contact', icon: 'mdi-email', url: '/contact'},
+					{ title: 'Contact Me', icon: 'mdi-email', url: '/contact'},
 					{ title: 'Resume', icon: '', url: '/resume'},
 				]
 			}

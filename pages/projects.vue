@@ -46,23 +46,40 @@
     				</p>
     			</div>
     			<div class="d-flex pt-10 justify-end">
-    				<v-btn
-    					icon
-    					class="mr-5"
-    					@click="redirect(project.githubUrl)"
-    				>
-    					<v-icon>
-    						mdi-github
-    					</v-icon>
-    				</v-btn>
-    				<v-btn
-    					icon
-    					@click="redirect(project.websiteUrl)"
-    				>
-						<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-						    <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
-						</svg>    					
-    				</v-btn>
+    				<v-tooltip top>
+    					<template v-slot:activator="{ on, attrs }">
+		    				<v-btn
+		    					icon
+		    					class="mr-5"
+		    					v-bind="attrs"
+				          		v-on="on"
+		    					@click="redirect(project.githubUrl)"
+		    				>
+		    					<v-icon>
+		    						mdi-github
+		    					</v-icon>
+		    				</v-btn>
+	    				</template>
+	    				<span>Check out the github repository</span>
+    				</v-tooltip>
+    				<v-tooltip bottom>
+    					<template v-slot:activator="{ on, attrs }">
+		    				<v-btn
+		    					icon
+		    					v-bind="attrs"
+				          		v-on="on"
+		    					@click="redirect(project.websiteUrl)"
+		    				>
+								<svg 
+									style="width:24px;height:24px" 
+									viewBox="0 0 24 24"									
+								>
+								    <path fill="currentColor" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+								</svg>    					
+		    				</v-btn>
+	    				</template>
+	    				<span>Check out the website</span>
+    				</v-tooltip>
     			</div>
     		</div>
     	</v-col>

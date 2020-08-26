@@ -45,7 +45,7 @@
     					{{ lang }}
     				</p>
     			</div>
-    			<div class="d-flex pt-10 justify-end">
+    			<div class="d-flex pt-10 justify-end" :class="{ 'justify-center' : $vuetify.breakpoint.smAndDown }">
     				<v-tooltip top>
     					<template v-slot:activator="{ on, attrs }">
 		    				<v-btn

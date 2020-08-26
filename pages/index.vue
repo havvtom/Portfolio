@@ -77,6 +77,11 @@
 </template>
 <script type="text/javascript">
   export default {
+    head () {
+      return {
+        title: 'HavvTom'
+      }
+    },
     computed: {
       maxWidth () {
         switch (this.$vuetify.breakpoint.name) {

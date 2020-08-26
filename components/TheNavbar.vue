@@ -4,7 +4,17 @@
 		<v-container>
 			<v-row>
 				<v-col>
-					H-Logo
+					<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+						 width="40px" height="40px" viewBox="0 0 200.000000 200.000000"
+						 preserveAspectRatio="xMidYMid meet">
+
+						<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+						fill="#34ebbd" stroke="none">
+						<path d="M100 1000 l0 -900 165 0 165 0 0 370 0 370 570 0 570 0 0 -370 0
+						-370 165 0 165 0 0 900 0 900 -165 0 -165 0 0 -370 0 -370 -570 0 -570 0 0
+						370 0 370 -165 0 -165 0 0 -900z"/>
+						</g>
+					</svg>
 				</v-col>
 				<v-col class="myFont d-none d-lg-flex d-xl-flex justify-end">
 					<v-btn text 

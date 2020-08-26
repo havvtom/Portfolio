@@ -102,9 +102,14 @@
   			]
   		}
   	},
+  	head () {
+  		return {
+  			title: 'Projects'
+  		}
+  	},
   	methods: {
   		redirect (url) {
-  			window.open( url, '_blank');
+  			window.open( url, '_blank')
   		}
   	}
   }

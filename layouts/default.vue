@@ -7,9 +7,14 @@
       </v-container>
 
 
-    <v-footer
+    <v-footer id="first"
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-container>
+        <div id="second" class="text-center mb-0">
+          <p>Designed and built by Tom Havatyi</p>
+          <p class="">&copy; {{ new Date().getFullYear() }} havvtom@gmail.com</p>
+        </div>
+      </v-container>      
     </v-footer>
   </v-app>
 </template>
@@ -31,6 +36,16 @@ export default {
 <style scoped>
   .v-application {
     background-color: #1e3656;
+  }
+  #first{
+    margin-top: 50px;
+    background-color: #1e3656;
+  }
+  #second {
+    font-size: 12px;
+  }
+  #second :hover{
+    color: #a6a195;
   }
 </style>
 

@@ -27,6 +27,14 @@
 					>
 						{{ link.title }}
 					</v-btn>
+					<v-btn 
+						class="ml-2" 
+						outlined 
+						color="teal"
+						@click="openPdf"
+					>
+						Resume
+					</v-btn>
 					
 				</v-col>
 				<v-btn text class="d-lg-none d-xlg-none" @click="drawer = !drawer">
@@ -64,6 +72,15 @@
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>
+
+			<v-btn 
+				class="ma-16" 
+				outlined 
+				color="teal"
+				@click="openPdf"
+			>
+				my Resume
+			</v-btn>
 		</v-navigation-drawer>
 	</nav>
 </template>
@@ -77,13 +94,15 @@
 					{ title: 'Projects', icon: 'mdi-folder', url: '/projects'},
 					{ title: 'About', icon: 'mdi-face', url: '/'},
 					{ title: 'Contact Me', icon: 'mdi-email', url: '/contact'},
-					{ title: 'Resume', icon: '', url: '/resume'},
 				]
 			}
 		},
 		methods: {
 			closeDrawer () {
 				setTimeout( () => this.drawer = false, 500)
+			},
+			openPdf () {
+				window.open('sample.pdf', '_blank')
 			}
 		}
 	}

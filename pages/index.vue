@@ -25,7 +25,10 @@
     <v-row>
       <v-col cols="12" md="6">
         <div class="myFont mb-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+          I am interested in creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to make a user friendly applications that I myself would enjoy using.
+
+          I gained a lot of knowledge by following web tutorials. Its what I do everyday whenever I get free time. After graduating from NUST, I was employed as a Chemical Engineer for a period of two years. I became a self employed tutor, teaching Mathematics and Science. I started learning web development in 2017, and have not stopped since then.  
+
         </div>
         <p class="myFont">Listed below are the technologies I am familiar with:</p>
         <div>

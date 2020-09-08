@@ -9,7 +9,7 @@
 	      		Get in touch
 	      	</p>
 	      	<p id="second">
-	      		Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+	      		I'm currently looking for any new opportunities in software development, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
 	      	</p>
 	      	<div class="d-flex pt-10 justify-center">
     				<v-tooltip top

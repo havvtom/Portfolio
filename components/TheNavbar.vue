@@ -102,7 +102,7 @@
 				setTimeout( () => this.drawer = false, 500)
 			},
 			openPdf () {
-				window.open('sample.pdf', '_blank')
+				window.open('resume.pdf', '_blank')
 			}
 		}
 	}

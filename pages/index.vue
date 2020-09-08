@@ -55,7 +55,7 @@
           <!-- src="~/assets/images/joshhavv.jpg" -->
             <v-row align="center" justify="center">
                 <v-img
-                  :src="require('~/assets/images/joshhavv.jpg')"
+                  :src="require('~/assets/images/dummy.jpeg')"
                   lazy-src="https://picsum.photos/id/11/100/60"
                   aspect-ratio="1"
                   class="grey lighten-2 gray"

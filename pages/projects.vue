@@ -98,7 +98,15 @@
   					image: require('~/assets/images/mathsnippets.png'),
   					websiteUrl: 'http://www.mathsnippets.co.za',
   					githubUrl: 'https://github.com/havvtom/Snippets-Client'
-  				}
+  				},
+          {
+            title: 'Jobs Portal', 
+            description: 'Post jobs for fellow developers to apply directly',
+            languages: ['Laravel', 'Tailwind', 'Nuxt.js'],
+            image: require('~/assets/images/jobsportal.png'),
+            websiteUrl: 'http://jobsclient.herokuapp.com',
+            githubUrl: 'https://github.com/havvtom/jobsclient'
+          }
   			]
   		}
   	},

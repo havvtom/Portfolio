@@ -96,7 +96,7 @@
   					description: 'Write your mathematics algebra notes in latex on the web.',
   					languages: ['Laravel', 'Tailwind', 'Nuxt.js'],
   					image: require('~/assets/images/mathsnippets.png'),
-  					websiteUrl: 'http://www.mathsnippets.co.za',
+  					websiteUrl: 'http://mathsnippets.herokuapp.com/',
   					githubUrl: 'https://github.com/havvtom/Snippets-Client'
   				},
           {
